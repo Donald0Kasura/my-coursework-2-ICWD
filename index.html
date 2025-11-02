@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Equal Employment Opportunities</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Equal Employment Opportunities</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#jobs">Jobs</a>
+            <a href="#apply">Apply</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Our Commitment</h2>
+            <p>
+                We are committed to providing equal employment opportunities to all individuals regardless of race, color, religion, gender, sexual orientation, national origin, age, disability, or veteran status. Diversity and inclusion are at the heart of our workplace.
+            </p>
+        </section>
+        <section id="jobs">
+            <h2>Open Positions</h2>
+            <ul>
+                <li>
+                    <strong>Software Engineer</strong> - Remote<br>
+                    <span>Develop and maintain web applications. Experience with JavaScript and Python preferred.</span>
+                </li>
+                <li>
+                    <strong>HR Coordinator</strong> - New York, NY<br>
+                    <span>Support recruitment and employee relations. Entry level, training provided.</span>
+                </li>
+                <li>
+                    <strong>Marketing Specialist</strong> - Hybrid<br>
+                    <span>Plan and execute marketing campaigns. Bachelor’s degree required.</span>
+                </li>
+            </ul>
+        </section>
+        <section id="apply">
+            <h2>Apply Now</h2>
+            <form id="applicationForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="position">Position:</label>
+                <select id="position" name="position" required>
+                    <option value="">Select a position</option>
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="HR Coordinator">HR Coordinator</option>
+                    <option value="Marketing Specialist">Marketing Specialist</option>
+                </select>
+
+                <label for="message">Why are you a great fit?</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit Application</button>
+            </form>
+            <div id="response"></div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Equal Employment Opportunities. All rights reserved.
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
